@@ -10,8 +10,9 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 public class NettyServer {
 
     public static void main(String[] args) {
-
+        new NettyServer().run(Config.BEGIN_PORT, Config.END_PORT);
     }
+
     public void run(int beginPort, int endPort) {
         System.out.println("server starting...!");
 
