@@ -39,8 +39,6 @@ public class NettyClient {
 
                     if (!future.isSuccess()) {
                         System.out.println("connection to host failed! Port : ");
-                    } else {
-                        System.out.println("successfully connect to host!");
                     }
 
                 }).get();
